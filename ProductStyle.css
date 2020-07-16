@@ -2,28 +2,25 @@ body{
   display:flex;
   flex-direction:column;
   align-items:center;
-  margin:auto;
-  background-color: #eee;
+  background-color:#eee;
   font-family:Lato, sans-serif !important;
-  
+  margin:auto;
 }
 
 header{
-  position:fixed !important;
+  position:fixed;
   display:flex;
-  flex-direction:row;
   background-color:#eee;
+  flex-direction:row;
+  flex-wrap:no-wrap;
+  width:100%;
 }
 
 #topNav{
    background-color:#eee;
-   margin-left:600px;
+   padding-top:10px;
+   margin-right:25px;
 }
-
-#navlinks{
-  padding-left:60px;
-}
-
 
 li{
   list-style:none;
@@ -34,21 +31,37 @@ a{
   color:black;
 }
 
+#linkLogo{
+  display:flex;
+}
+
+#navlinks{
+  padding-left:25px;
+}
+
+#navMaster{
+  
+}
+
+#imgText{
+  display:flex;
+}
+
 #header-img{
   width:100px;
-  padding-top:10px;
-  padding-right:800px;
+  position:relative;
+  top:9px;
 }
 
 #subscribeForm{
-  margin-top:200px;
+  margin-top:100px;
   display:flex;
   flex-direction:column;
   align-items:center;
 }
 
 #email{
-  width:320px;
+  width:300px;
   padding-top:5px;
   padding-bottom:5px;
   padding-left:1px;
@@ -66,40 +79,61 @@ input{
   background-color: #f1c40f;
   margin:auto;
   height:30px;
-  width:170px;
   border-radius:3px;
-  padding-left:24.5px;
   padding-top:7.2px;
-  padding-bottom:8px;
+  padding-bottom:7.2px;
   font-weight:bold !important;
   border-style:none;
-  font-size:17.5px;
+  font-size:17px;
   cursor:pointer;
+  text-align:center;
 }
 
 #features{
   margin-top: 90px;
 }
 
+#algPic{
+  height:100px;
+  width:100px;
+  display:flex;
+  margin-bottom:25px;
+}
+
+#innerFeatures{
+  display:flex;
+  margin-bottom:20px; 
+  flex-wrap:wrap;
+}
+
+#innerAlgContext{
+  margin-left:50px;
+  flex-wrap:wrap;
+}
+
+#innerFeatureParagraph{
+  line-height:2px;
+  font-style:none;
+  font-size:16px;
+  font-family:Lato, sans-serif
+}
+
 #videoContent{
-  margin-top:100px;
+  margin-top:80px;
   display:flex;
   flex-direction:column;
   align-self:center;
-  padding-left:85px;
+  margin-bottom:10px;
 }
-
-
 
 #pricing{
   display:grid;
   grid-template-columns:245px 245px 245px !important;
   grid-gap:20px;
-  flex-direction:center;
-  margin-top:75px;
+  justify-content:center;
+  margin-top:55px;
   margin-bottom:35px;
 }
-
 
 #box-one{
   height:295px;
@@ -117,7 +151,7 @@ input{
   border-style:solid;
   border-width:1px;
   background-color:#eee;
-   box-shadow:6px 12px 6px rgba(0,0,0,.3);
+  box-shadow:6px 12px 6px rgba(0,0,0,.3);
 }
 
 #box-three{
@@ -131,7 +165,6 @@ input{
 
 #box-content{
   padding-top:11px;
-  
 }
 
 #innerbox-content{
@@ -148,11 +181,21 @@ input{
   font-size:18px;
   border-style:none;
   cursor:pointer;
-  animation-name:colorButton;
-  animation-duration:5s;
- 
 }
 
+#innerButton:hover{
+  animation-name: background-color;
+  animation-duration:500ms !important;
+  animation-fill-mode:forwards;
+}
+
+@keyframes background-color {
+    100% {
+      background-color:#ff8100d6;
+    }
+  }
+
+/* Responsive Screen for Cell */
 @media(max-width:750px){
   #pricing{
     display:flex !important;
@@ -160,9 +203,11 @@ input{
     width:300px !important;
     margin:auto;
   }
+  
   #box-one{
     margin-top:30px !important;
   }
+  
   #box-two{
     margin-top:30px !important;
   }
@@ -170,7 +215,62 @@ input{
     margin-top:30px !important;
     margin-bottom:20px !important;
   }
+   #header{
+    display:flex !important;
+    flex-direction:column;
+    align-items:center;
+    margin-top:-10px; 
+  }
+  #topNav{
+    position:relative;
+    left:0px;
+    top:6px;
+    padding:1px;
+  }
+  #header-image{
+    padding:1px !important;
+    position:relative !important;
+    margin-right:20px;
+    margin-bottom:5px;
+  }
+  #linkLogo{
+    position:relative;
+    right:20px;
+    top:13.5px;
+    padding-right:2px;
+    padding-bottom:10px;
+  }
+ 
+  main{
+    margin-top:30px;
+    text-align:center !important;
+    align-items:center !important;
+  }
+  #algPic{
+   margin-bottom:1px;
+    margin-right:3px;
+   
+  }
+  #features{
+    margin-top:35px;
+    padding-right:65px;
+    margin-bottom:3px;
+  }
+  #innerFeatures{
+    display:flex;
+    flex-direction:columns;
+    justify-content:center !important;
+    padding-top:3px;
+  }
+  #innerAlgContext{
+   padding-right:22px;
+  }
+  #videoContent{
+    margin-top:2px;
+    max-width:auto;
+  }
 }
+/* End of Responsive Screen for Cell */
 
 #boxHeader{
   height:45px;
@@ -181,7 +281,27 @@ input{
 }
 
 #footer{
-  background-color:#ddd;
-  height:40px;
-  text-align:end;
+  background-color:#ddd !important;
+  height:20px;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  justify-content:space-evenly;
+  padding-bottom:2px;
+  color: #000;
+  text-decoration: none !important;
+} 
+
+#innerFooter{
+  display:flex;
+  background-color:#ddd !important;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  justify-content:space-evenly;
+  padding-bottom:1px
+  margin-top:-6px;
+  color: #000;
+  text-decoration: none !important;
+  padding-top:1px;
 }
