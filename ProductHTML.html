@@ -1,10 +1,21 @@
 <html>
   <head>
-    <title>My Product Landing Page </title>
+    <title>My Product Landing Page</title>
   </head>
+  
   <body id='toTop'>
+    <!-- Nav Links -->
     <header id='header'>
+      <div id='linkLogo'>
+        <div id='header-image'>
       <a href='#toTop'><img src='https://www.ryerson.ca/content/dam/cs/images/current-undergrads/CSCU-Logo-01.png' alt='foo' id ='header-img'/></a>
+        </div>
+        <div id='linkLogo'>
+          <h2>Code Share</h2>
+        </div>
+      </div>
+    
+    <div id='navMaster'>
       <nav id='nav-bar'>
         <ul id='topNav'>
           <navlink id ='navlinks' href='#features' class='nav-link'><a href='#features'>Features</a></navlink>
@@ -12,32 +23,62 @@
           <navlink id ='navlinks' href='#pricing'class='nav-link'><a href='#pricing'>Pricing</a></navlink>
         </ul>
       </nav>
+      <div>
     </header>
+    <!-- Main content  -->
     <main>
-      
+      <!-- Subscription & Email information -->
       <div id='subscribeForm'>
-        <h2>Learn to code today. Subscribe for free tutorials!</h2>
-        
+        <h2 id ='subText'>Start your new career today by signing up!</h2>
         <form id='form' action="https://www.freecodecamp.com/email-submit">
-          <input name = 'email' type ='email' id ='email' placeholder='Enter your email address' required=''/>
-          <input style='font-weight:300;' id='submit' type='submit' value='GET STARTED'/>
+          <input name='email' type ='email' id ='email' placeholder='Enter your email address' required=''/>
+          <input style='font-weight:200;' id='submit' type='submit' value='GET STARTED'/>
         </form>
-        
       </div>
-    
+    <!-- Features Content & Premiun Information -->
       <div id='features'>
-        <ul>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-        <ul>
+        <div>
+          <ul>
+            <li>
+              <div id='innerFeatures'>
+                <img id='algPic' src="https://i.ibb.co/4mMcqyr/clipart2120564.png" alt="clipart2120564" border="0">
+                <div id ='innerAlgContext'>
+                     <h2>Premium Package</h2>
+                  
+                    <p>Our premiun value pack uses the latest technologies with content added daily. This will increase the value of your purchase.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              
+              <div id='innerFeatures'>
+               <img  id='algPic' src="https://i.ibb.co/0tnWh3Q/pngguru-com-1.png" alt="pngguru-com-1"border="0">
+                <div id ='innerAlgContext'>
+                  <h2>Easily Accessible</h2>
+                  <p>We make sure that you are fully satisfied and provide certifications upon completion. We also provide free refunds if you are not satisfied.<p>
+                </div>
+              </div>
+            </li>
+               <li>
+              <div id='innerFeatures'>
+                <img id='algPic' src='https://hackr.io/tutorials/learn-data-structures-algorithms/logo/logo-data-structures-algorithms?ver=1550834269' alt='alg. picture'/>
+                <div id ='innerAlgContext'>
+                  <h2>Mentor Assurance</h2>
+                  <p>For every purchase you make, a mentor will check on your progress weekly to ensure that you are on the right track!</p>
+                    
+                  </div>
+                  </div>
+              </li>
+            <ul>
+          </div>
+            <div>
+       </div>
     </div>
-    
       <!-- how it works video section -->
     <div id='videoContent'>
-       <iframe id = 'video' width="580" height="315" src="https://www.youtube.com/embed/y881t8ilMyc" frameborder="0" allowfullscreen></iframe>
+    <iframe  height="480" id ='video' src="https://www.youtube.com/embed/09_LlHjoEiY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    
+     <!-- Pricing & Information -->
     <div id='pricing'>
       <div id='box-one'><div id='boxHeader'><h4>Full Value Pack</h4>
         <div>
@@ -77,12 +118,17 @@
         </div>
       </div>
     </div>
-          </div>
-      
+  </div>
+      <!-- Footer information -->
      <footer>
-      <div id='footer'>
-       aasdfasdf
-      </div>
+       <div id='footer'>
+          <h5><a href src='#'>Privacy</a></h5>
+           <h5><a href src='#'>Terms</a></h5>
+           <h5><a href src='#' target='blank'>Contact</a></h5>
+       </div>
+       <div id='innerFooter'>
+         <h6>Copyright 2020 | Code Share</h6>
+       </div>
     </footer>
     </main>
 </html>
